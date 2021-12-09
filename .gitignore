@@ -22,3 +22,20 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 .DS_Store
+*.bat
+h2/bin/h2.sh
+h2/build.iml
+h2/build.sh
+h2/docs/h2.pdf
+h2/docs/html/advanced.html
+h2/docs/html/architecture.html
+h2/docs/html/build.html
+h2/docs/html/changelog.html
+h2/docs/html/cheatSheet.html
+h2/docs/html/commands.html
+h2/docs/html/datatypes.html
+h2/docs/html/download-archive.html
+h2/docs/html/images/quickstart-5.png
+h2/docs/html/images/console.png
+
+h2/
