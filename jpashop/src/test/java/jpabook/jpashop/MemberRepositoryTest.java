@@ -32,7 +32,7 @@ public class MemberRepositoryTest {
     public void testMember() throws Exception{
         //given
         Member member = new Member();
-        member.setUsername("memberA");
+        member.setName("memberA");
 
         //when
         Long savedId = memberRepository.save(member);
@@ -40,7 +40,7 @@ public class MemberRepositoryTest {
 
         //then
         Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
-        Assertions.assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
+        Assertions.assertThat(findMember.getName()).isEqualTo(member.getName());
         Assertions.assertThat(findMember).isEqualTo(member); //저장한 것과 조회한 것이 같나? -> 같다
         System.out.println("findMember == member: " + (findMember == member)); //true, 같은 트랜잭션 안에서 저장, 조회 -> 같은 엔티티로 식별
     }
